@@ -1,0 +1,20 @@
+<nav>
+  <div class="col-8 offset-2">
+    <h2 [routerLink]="['home']">Events Website</h2>
+    <ul>
+      <li *ngIf="!user" [routerLink]="['info']"><a>Submit</a></li>
+      <li *ngIf="!user" [routerLink]="['takePhoto']"><a>Take a Photo</a></li>
+      <li [routerLink]="['event/add']"><a>Add new event</a></li>
+      <li *ngIf="!user" [routerLink]="['login']"><a>LogIn</a></li>
+      <li *ngIf="user" (click)="logout()" [routerLink]="['home']"><a>LogOut: {{user.username}}</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6" routerLinkActive="active">
+  <a [routerLink]="['info']">
+      <img src="C:/Users/DELL/Desktop/Angular Project/myproject/src/assets/img/clickme.gif">click me
+  </a>
+</div>
+<div class="container" id="contantContainer">
+  <router-outlet></router-outlet>
+</div>

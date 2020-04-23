@@ -1,0 +1,9 @@
+<mat-card *ngIf="event">
+  <img [src]="event.imageSrc" />
+  <div class="eventDataContainer">
+      <h1>{{ event.name }}</h1>
+      <p>{{ event.date | date }}</p>
+      <p>{{ event.price | currency: 'TND '}}</p>
+      <p>{{event.description}}</p>
+  </div>
+</mat-card>
