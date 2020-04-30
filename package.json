@@ -28,7 +28,7 @@
     "angular-schema-form": "^0.8.13",
     "bootstrap": "^4.4.1",
     "jexl": "^2.2.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "lodash": "^4.17.15",
     "lodash-es": "^4.17.15",
     "ngx-webcam": "^0.3.0",
